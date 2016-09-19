@@ -22,7 +22,7 @@ class ViewController: UIViewController {
             displayDigit.text = String(newValue)
         }
     }
-   
+    
     
     @IBAction private func touchDigits(sender: UIButton) {
         let digit = sender.currentTitle!
@@ -41,8 +41,10 @@ class ViewController: UIViewController {
     private var brain = CalculatorBrain()
     
     @IBAction private func performOperation(sender: UIButton) {
-        isTypying = false
-        
+        if isTypying {
+            brain.setOperand(displayValue)
+            isTypying = false
+        }
         if let mathematicalSymbol = sender.currentTitle {
             brain.performOperation(mathematicalSymbol)
         }
