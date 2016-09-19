@@ -16,7 +16,9 @@ class CalculatorBrain {
     private func performOperation(symbol: String) {
         
     }
-    private func showResult(){
-        
+    private var result: Double {
+        get {
+            return 0.0
+        }
     }
 }
