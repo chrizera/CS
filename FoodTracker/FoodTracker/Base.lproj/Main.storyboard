@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="eNZ-3J-Fw2">
-                                <frame key="frameInset" minX="16" minY="80" width="343" height="437"/>
+                                <frame key="frameInset" minX="16" minY="80" width="343" height="493"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bY4-yX-wDR">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -48,6 +48,9 @@
                                             <outletCollection property="gestureRecognizers" destination="Vx2-ff-hZN" appends="YES" id="7dB-Q8-KnO"/>
                                         </connections>
                                     </imageView>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="SvY-5a-h9B" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="t0l-E6-gNO" firstAttribute="leading" secondItem="eNZ-3J-Fw2" secondAttribute="leading" id="PlY-st-Hqa"/>
