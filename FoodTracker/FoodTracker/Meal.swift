@@ -16,7 +16,7 @@ class Meal {
     var rating: Int
     
     //Inicializa as propriedades
-    init?(name: String, photo: UIImage?, rating: Int) {
+    init?(name: String,photo: UIImage?, rating: Int) {
         self.name = name
         self.photo = photo
         self.rating = rating
