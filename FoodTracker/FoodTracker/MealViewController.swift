@@ -13,8 +13,11 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
-    
     @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    /*O valor é passado para a MealTableViewController no método prepareForSegue(_:sender:) ou construido quando feit uma nova meal*/
+    var meal: Meal?
 
     override func viewDidLoad() {
         super.viewDidLoad()

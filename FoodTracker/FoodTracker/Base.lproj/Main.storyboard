@@ -111,7 +111,7 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="eNZ-3J-Fw2" secondAttribute="trailing" id="XW1-9O-4tS"/>
                             <constraint firstItem="eNZ-3J-Fw2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="b9P-uE-roy"/>
-                            <constraint firstItem="eNZ-3J-Fw2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="dvx-4G-lik"/>
+                            <constraint firstItem="eNZ-3J-Fw2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="dvx-4G-lik"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="d27-oV-vyO">
@@ -122,6 +122,7 @@
                         <outlet property="nameTextField" destination="t0l-E6-gNO" id="rAX-Jh-TAh"/>
                         <outlet property="photoImageView" destination="0Mv-Lz-8Lg" id="l3z-n3-btl"/>
                         <outlet property="ratingControl" destination="SvY-5a-h9B" id="rqt-i8-uYO"/>
+                        <outlet property="saveButton" destination="ESh-k7-BfT" id="eg7-qO-0xl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
