@@ -58,7 +58,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Your Meals" id="EpG-rd-yb2">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VBs-Ww-Wwf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VBs-Ww-Wwf">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="FOj-qk-SYh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VrJ-Rp-xaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -68,7 +72,7 @@
         <!--Meal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Meal View Controller" customClass="ViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Meal View Controller" customClass="MealViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -111,9 +115,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameTextField" destination="t0l-E6-gNO" id="rAX-Jh-TAh"/>
-                        <outlet property="photoImageView" destination="0Mv-Lz-8Lg" id="l3z-n3-btl"/>
-                        <outlet property="ratingControl" destination="SvY-5a-h9B" id="rqt-i8-uYO"/>
+                        <outlet property="nameTextField" destination="t0l-E6-gNO" id="Uqs-xr-pmw"/>
+                        <outlet property="photoImageView" destination="0Mv-Lz-8Lg" id="l0s-V0-hve"/>
+                        <outlet property="ratingControl" destination="SvY-5a-h9B" id="IBS-DS-g9T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
