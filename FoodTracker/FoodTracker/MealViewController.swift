@@ -52,6 +52,19 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         dismiss(animated: true, completion: nil)
     }
     
+    //MARK: Navigation
+    //Configura uma view controller antes de ser lancada
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if saveButton === sender {
+            let name = nameTextField.text ?? ""
+            let photo = photoImageView.image
+            let rating = ratingControl.rating
+            
+            //Define um objeto com os valores recebidos
+            meal = Meal(name: name, photo: photo, rating: rating)
+        }
+    }
+    
     // MARK: Actions
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         // Hide the keyboard.
