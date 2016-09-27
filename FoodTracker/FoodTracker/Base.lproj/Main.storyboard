@@ -60,7 +60,7 @@
                     <navigationItem key="navigationItem" title="Your Meals" id="EpG-rd-yb2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="VBs-Ww-Wwf">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="FOj-qk-SYh"/>
+                                <segue destination="Rno-Mz-AOy" kind="presentation" identifier="AddItem" id="FOj-qk-SYh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -114,10 +114,14 @@
                             <constraint firstItem="eNZ-3J-Fw2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="dvx-4G-lik"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="New Meal" id="d27-oV-vyO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uSh-Fb-oTl"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ESh-k7-BfT"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="nameTextField" destination="t0l-E6-gNO" id="Uqs-xr-pmw"/>
-                        <outlet property="photoImageView" destination="0Mv-Lz-8Lg" id="l0s-V0-hve"/>
-                        <outlet property="ratingControl" destination="SvY-5a-h9B" id="IBS-DS-g9T"/>
+                        <outlet property="nameTextField" destination="t0l-E6-gNO" id="rAX-Jh-TAh"/>
+                        <outlet property="photoImageView" destination="0Mv-Lz-8Lg" id="l3z-n3-btl"/>
+                        <outlet property="ratingControl" destination="SvY-5a-h9B" id="rqt-i8-uYO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -127,7 +131,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1076" y="107.49625187406298"/>
+            <point key="canvasLocation" x="2015.2" y="107.49625187406298"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kgM-pr-Kcm">
@@ -146,6 +150,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fm-F8-sG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-628" y="106.59670164917542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZMg-50-kF1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rno-Mz-AOy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rO8-E3-8hk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Kzz-9n-fhV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ttg-Z2-wkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="107.49625187406298"/>
         </scene>
     </scenes>
     <resources>
