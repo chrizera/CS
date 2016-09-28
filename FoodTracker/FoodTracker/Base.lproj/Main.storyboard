@@ -118,7 +118,7 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uSh-Fb-oTl"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ESh-k7-BfT">
                             <connections>
-                                <segue destination="vpL-OM-cu4" kind="unwind" unwindAction="unwindToMealListWithSender:" id="rXF-9k-RTN"/>
+                                <segue destination="vpL-OM-cu4" kind="unwind" unwindAction="unwindToMealListWithSender:" id="1F0-Zq-lTE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
