@@ -55,7 +55,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     //MARK: Navigation
     //Configura uma view controller antes de ser lancada
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if saveButton === sender {
+        if saveButton === sender as AnyObject {
             let name = nameTextField.text ?? ""
             let photo = photoImageView.image
             let rating = ratingControl.rating
