@@ -16,6 +16,8 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
+    
+    
     /*O valor é passado para a MealTableViewController no método prepareForSegue(_:sender:) ou construido quando feit uma nova meal*/
     var meal: Meal?
 
@@ -69,6 +71,12 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     //MARK: Navigation
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     //Configura uma view controller antes de ser lancada
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if saveButton === sender as AnyObject {

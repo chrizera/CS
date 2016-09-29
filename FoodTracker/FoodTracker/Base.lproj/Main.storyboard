@@ -115,10 +115,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="d27-oV-vyO">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uSh-Fb-oTl"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uSh-Fb-oTl">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="h3F-gZ-RI3"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ESh-k7-BfT">
                             <connections>
-                                <segue destination="vpL-OM-cu4" kind="unwind" unwindAction="unwindToMealListWithSender:" id="1F0-Zq-lTE"/>
+                                <segue destination="vpL-OM-cu4" kind="unwind" unwindAction="unwindToMealListWithSender:" id="YXG-Y2-vPS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -126,7 +130,6 @@
                         <outlet property="nameTextField" destination="t0l-E6-gNO" id="rAX-Jh-TAh"/>
                         <outlet property="photoImageView" destination="0Mv-Lz-8Lg" id="l3z-n3-btl"/>
                         <outlet property="ratingControl" destination="SvY-5a-h9B" id="rqt-i8-uYO"/>
-                        <outlet property="saveButton" destination="ESh-k7-BfT" id="eg7-qO-0xl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
