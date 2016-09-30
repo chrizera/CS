@@ -8,12 +8,15 @@
 
 import UIKit
 
+@IBDesignable
 class FaceView: UIView {
     
-    var scale: CGFloat = 0.90
-    var mouthCurvature: Double = 1.0 // 1 = full smile, -1 = frown
-    var eyesOpen = false
-    var eyeBrowTilt = 0.5
+    @IBInspectable var scale: CGFloat = 0.90 { didSet { setNeedsDisplay() } }
+    @IBInspectable var mouthCurvature: Double = 1.0 { didSet { setNeedsDisplay() } }
+    @IBInspectable var eyesOpen: Bool = false { didSet { setNeedsDisplay() } }
+    @IBInspectable var eyeBrowTilt: Double = 0.5 { didSet { setNeedsDisplay() } }
+    @IBInspectable var color: UIColor = UIColor.blue { didSet { setNeedsDisplay() } }
+    @IBInspectable var lineWidth: CGFloat = 5.0 { didSet { setNeedsDisplay() } }
 
     
     private var skullRadius: CGFloat {
@@ -42,7 +45,7 @@ class FaceView: UIView {
         
         let path =  UIBezierPath(arcCenter: midpoint, radius: withRadius, startAngle: 0.0, endAngle: CGFloat(2 * M_PI), clockwise: false)
         
-        path.lineWidth = 5.0
+        path.lineWidth = lineWidth
         return path
     }
     
@@ -72,7 +75,7 @@ class FaceView: UIView {
             let path = UIBezierPath()
             path.move(to: CGPoint(x: eyeCenter.x - eyeRadius, y: eyeCenter.y))
             path.addLine(to: CGPoint(x: eyeCenter.x + eyeRadius, y: eyeCenter.y))
-            path.lineWidth = 5.0
+            path.lineWidth = lineWidth
             return path
         }
     }
@@ -93,7 +96,7 @@ class FaceView: UIView {
         let path = UIBezierPath()
         path.move(to: start)
         path.addCurve(to: end, controlPoint1: cp1, controlPoint2: cp2)
-        path.lineWidth = 5.0
+        path.lineWidth = lineWidth
         
         return path
     }
@@ -119,13 +122,13 @@ class FaceView: UIView {
         let path = UIBezierPath()
         path.move(to: browStart)
         path.addLine(to: browEnd)
-        path.lineWidth = 5.0
+        path.lineWidth = lineWidth
         return path
     }
     
     override func draw(_ rect: CGRect) {
         
-        UIColor.blue.set()
+        color.set()
         pathForCircleCenteredAtPoint(midpoint: skullCenter, withRadius: skullRadius).stroke()
         pathForEye(eye: .left).stroke()
         pathForEye(eye: .right).stroke()
