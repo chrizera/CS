@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FaceIt/FaceView.swift"
-            timestampString = "496880344.672051"
+            timestampString = "496953014.524951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "pathForCircleCenteredAtPoint(midpoint:withRadius:)"
             landmarkType = "7">
          </BreakpointContent>
