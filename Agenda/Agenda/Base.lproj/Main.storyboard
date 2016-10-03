@@ -116,8 +116,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="F5q-Zd-UAT">
-                                <frame key="frameInset" minX="67" minY="203" width="240" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <frame key="frameInset" minX="67" minY="203" maxX="68" maxY="327"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="E6Q-WQ-mKf" appends="YES" id="rib-up-YSN"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -140,6 +144,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79c-Lv-Ulm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Bni-LK-u6l" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="E6Q-WQ-mKf">
+                    <connections>
+                        <action selector="selectImageFromLibrary:" destination="vYh-eA-xwP" id="OCh-Ud-Qix"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3524" y="151.57421289355324"/>
         </scene>

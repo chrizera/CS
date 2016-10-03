@@ -8,13 +8,38 @@
 
 import UIKit
 
-class AgendaViewController: UIViewController{
+class AgendaViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet weak var foto: UIImageView!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var telefone: UITextField!
     @IBOutlet weak var nome: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    @IBAction func selectImageFromLibrary(_ sender: UITapGestureRecognizer) {
+        email.resignFirstResponder()
+        telefone.resignFirstResponder()
+        nome.resignFirstResponder()
+        
+        let imagePickerController = UIImagePickerController()
+        
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.delegate = self
+        
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        foto.image = selectedImage
+        
+        dismiss(animated: true, completion: nil)
+    }
     
     var itemAgenda: ItensAgenda?
     
