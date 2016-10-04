@@ -15,9 +15,33 @@ class ViewController: UIViewController {
     
     @IBAction func showNextQuestion(sender: AnyObject) {
         
+        currentQuestionIndex += 1
+        if currentQuestionIndex == questions.count {
+            currentQuestionIndex = 0
+        }
+        
+        let question = questions[currentQuestionIndex]
+        questionLabel.text = question
+        answerLabel.text = "???"
+        
     }
     @IBAction func showAnswer(sender: AnyObject) {
         
+        let answer = answers[currentQuestionIndex]
+        answerLabel.text = answer
     }
+    
+    let questions = ["From what cognac is made?", "What is 7+7 ?", "What is the capital of Vermont?"]
+    let answers = ["Grapes", "14", "Montpelier"]
+    var currentQuestionIndex = 0
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        questionLabel.text = questions[currentQuestionIndex]
+        
+    }
+    
 }
 
