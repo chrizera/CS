@@ -18,12 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wv-IS-LPy">
-                                <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRp-n6-mN8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="SK1-jb-eCT"/>
+                                </constraints>
+                                <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfH-0K-IGG">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,18 +47,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="9CI-q4-FHt" firstAttribute="centerX" secondItem="7wv-IS-LPy" secondAttribute="centerX" id="5ch-cr-y00"/>
-                            <constraint firstItem="7wv-IS-LPy" firstAttribute="top" secondItem="lgO-xb-aLo" secondAttribute="bottom" constant="8" id="7jR-YB-ND1"/>
+                            <constraint firstItem="EQv-IU-CBj" firstAttribute="centerX" secondItem="FRp-n6-mN8" secondAttribute="centerX" id="5IB-2w-yET"/>
+                            <constraint firstItem="9CI-q4-FHt" firstAttribute="centerX" secondItem="FRp-n6-mN8" secondAttribute="centerX" id="BcE-sL-r07"/>
                             <constraint firstItem="C7I-YC-6cB" firstAttribute="top" secondItem="GfH-0K-IGG" secondAttribute="bottom" constant="8" id="Ghh-30-Bow"/>
                             <constraint firstItem="EQv-IU-CBj" firstAttribute="top" secondItem="9CI-q4-FHt" secondAttribute="bottom" constant="8" id="Hjf-9n-9Xm"/>
-                            <constraint firstItem="GfH-0K-IGG" firstAttribute="top" secondItem="7wv-IS-LPy" secondAttribute="bottom" constant="8" id="Lfk-CD-Vvm"/>
+                            <constraint firstItem="FRp-n6-mN8" firstAttribute="top" secondItem="lgO-xb-aLo" secondAttribute="bottom" constant="8" id="JTR-aA-fPM"/>
+                            <constraint firstItem="C7I-YC-6cB" firstAttribute="centerX" secondItem="FRp-n6-mN8" secondAttribute="centerX" constant="-1" id="Jud-wz-LAI"/>
                             <constraint firstItem="9CI-q4-FHt" firstAttribute="top" secondItem="C7I-YC-6cB" secondAttribute="bottom" constant="8" id="OOD-Kq-6ly"/>
-                            <constraint firstItem="7wv-IS-LPy" firstAttribute="centerX" secondItem="Cjz-qL-9Oq" secondAttribute="centerX" id="cZd-Im-L3t"/>
-                            <constraint firstItem="C7I-YC-6cB" firstAttribute="centerX" secondItem="7wv-IS-LPy" secondAttribute="centerX" id="eyW-lp-MQl"/>
-                            <constraint firstItem="GfH-0K-IGG" firstAttribute="centerX" secondItem="7wv-IS-LPy" secondAttribute="centerX" id="qjh-vp-wZA"/>
-                            <constraint firstItem="EQv-IU-CBj" firstAttribute="centerX" secondItem="7wv-IS-LPy" secondAttribute="centerX" id="yiW-Lj-fLW"/>
+                            <constraint firstItem="FRp-n6-mN8" firstAttribute="centerX" secondItem="Cjz-qL-9Oq" secondAttribute="centerX" id="Pri-FH-kCQ"/>
+                            <constraint firstItem="GfH-0K-IGG" firstAttribute="centerX" secondItem="FRp-n6-mN8" secondAttribute="centerX" constant="-1" id="SO1-1K-zkO"/>
+                            <constraint firstItem="GfH-0K-IGG" firstAttribute="top" secondItem="FRp-n6-mN8" secondAttribute="bottom" constant="8" id="eJF-1w-4lN"/>
+                            <constraint firstItem="GfH-0K-IGG" firstAttribute="centerX" secondItem="FRp-n6-mN8" secondAttribute="centerX" constant="-1" id="yTS-oH-aWq"/>
                         </constraints>
                     </view>
                 </viewController>
