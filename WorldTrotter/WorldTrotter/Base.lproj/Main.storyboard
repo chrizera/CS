@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ae7-fb-mWO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WDF-HO-N1c">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Conversion View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,6 +70,7 @@
                             <outletCollection property="gestureRecognizers" destination="Drv-kU-i9v" appends="YES" id="I3h-Ep-WTc"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="rdH-pb-3pS"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="9CI-q4-FHt" id="WTn-84-WIK"/>
                         <outlet property="textField" destination="FRp-n6-mN8" id="ptq-ML-0jc"/>
@@ -82,9 +83,9 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="105.69715142428787"/>
+            <point key="canvasLocation" x="1913" y="886"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="Q2M-5t-EYh">
             <objects>
                 <viewController id="ae7-fb-mWO" sceneMemberID="viewController">
@@ -92,10 +93,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Vcn-GA-YYh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SV6-hW-Ez2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="106"/>
+            <point key="canvasLocation" x="1912.8" y="105.69715142428787"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cJB-5d-2x9">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WDF-HO-N1c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="751-Y2-kag">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ae7-fb-mWO" kind="relationship" relationship="viewControllers" id="9sj-PY-HNb"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="CBD-Us-FbG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVp-hg-1jy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="105.69715142428787"/>
         </scene>
     </scenes>
 </document>
