@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                             <outletCollection property="gestureRecognizers" destination="Drv-kU-i9v" appends="YES" id="I3h-Ep-WTc"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="rdH-pb-3pS"/>
+                    <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="rdH-pb-3pS"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="9CI-q4-FHt" id="WTn-84-WIK"/>
                         <outlet property="textField" destination="FRp-n6-mN8" id="ptq-ML-0jc"/>
@@ -85,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="1913" y="886"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="Q2M-5t-EYh">
             <objects>
                 <viewController id="ae7-fb-mWO" sceneMemberID="viewController">
@@ -93,7 +93,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Vcn-GA-YYh"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="Vcn-GA-YYh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SV6-hW-Ez2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,4 +118,8 @@
             <point key="canvasLocation" x="973.60000000000002" y="105.69715142428787"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ConvertIcon" width="48" height="32"/>
+        <image name="MapIcon" width="48" height="32"/>
+    </resources>
 </document>
