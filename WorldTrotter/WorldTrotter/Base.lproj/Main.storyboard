@@ -88,7 +88,7 @@
         <!--Map-->
         <scene sceneID="Q2M-5t-EYh">
             <objects>
-                <viewController id="ae7-fb-mWO" sceneMemberID="viewController">
+                <viewController id="ae7-fb-mWO" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="GaI-7w-ctp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -109,8 +109,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ae7-fb-mWO" kind="relationship" relationship="viewControllers" id="9sj-PY-HNb"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="CBD-Us-FbG"/>
+                        <segue destination="ae7-fb-mWO" kind="relationship" relationship="viewControllers" id="9sj-PY-HNb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVp-hg-1jy" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -10,6 +10,20 @@ import UIKit
 
 class ConversionViewController: UIViewController, UITextFieldDelegate {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print("ConversionViewController loaded its view")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let date = NSDate()
+        let calendar = NSCalendar.current
+        let components = calendar.component(.hour, from: date as Date)
+        let hour = 3
+        
+    }
+    
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
     
@@ -77,7 +91,10 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         let existingTextHasLetters = textField.text?.rangeOfCharacter(from: letters)
         let replacementTextHasLetters = string.rangeOfCharacter(from: letters)
         
-        if existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil && existingTextHasLetters == nil && replacementTextHasLetters == nil {
+        if existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil {
+            return false
+        }
+        else if existingTextHasLetters != nil || replacementTextHasLetters != nil{
             return false
         }
         else {
