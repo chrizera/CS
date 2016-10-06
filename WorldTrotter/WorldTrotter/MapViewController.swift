@@ -9,9 +9,10 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
     
     var mapView: MKMapView!
+    var button: UIButton!
     
     override func loadView() {
         //Create the map view
@@ -39,6 +40,12 @@ class MapViewController: UIViewController {
         trailingConstraint.isActive = true
         
         segmentedControl.addTarget(self, action: #selector(mapTypeChanged(segControl:))/* Selector(("mapTypeChanged:"))*/, for: .valueChanged)
+        
+        let frame = CGRect(x: 320, y: 540, width: 50, height: 50)
+        button = UIButton(frame: frame)
+        button.backgroundColor = UIColor.red
+        button.setTitle("Zoom", for: .normal)
+        view.addSubview(button)
 
     }
 
