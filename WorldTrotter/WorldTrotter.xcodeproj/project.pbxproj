@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD465C651DA6FACC006CD3C7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD465C641DA6FACC006CD3C7 /* WebViewController.swift */; };
 		BD7FBBA51DA5A34100CC9EC0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7FBBA41DA5A34100CC9EC0 /* MapKit.framework */; };
 		BD7FBBA71DA5ABA100CC9EC0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7FBBA61DA5ABA100CC9EC0 /* MapViewController.swift */; };
 		BDE497271DA45C20004D732B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE497261DA45C20004D732B /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD465C641DA6FACC006CD3C7 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BD7FBBA41DA5A34100CC9EC0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BD7FBBA61DA5ABA100CC9EC0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BDE497231DA45C20004D732B /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 				BDE497261DA45C20004D732B /* AppDelegate.swift */,
 				BDE4972A1DA45C20004D732B /* Main.storyboard */,
 				BD7FBBA61DA5ABA100CC9EC0 /* MapViewController.swift */,
+				BD465C641DA6FACC006CD3C7 /* WebViewController.swift */,
 				BDE4972D1DA45C20004D732B /* Assets.xcassets */,
 				BDE4972F1DA45C20004D732B /* LaunchScreen.storyboard */,
 				BDE497321DA45C20004D732B /* Info.plist */,
@@ -155,6 +158,7 @@
 				BDE497391DA4721C004D732B /* ConversionViewController.swift in Sources */,
 				BD7FBBA71DA5ABA100CC9EC0 /* MapViewController.swift in Sources */,
 				BDE497271DA45C20004D732B /* AppDelegate.swift in Sources */,
+				BD465C651DA6FACC006CD3C7 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

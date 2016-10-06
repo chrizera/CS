@@ -38,9 +38,6 @@ class MapViewController: UIViewController {
         leadingConstraint.isActive = true
         trailingConstraint.isActive = true
         
-        
-        
-        
         segmentedControl.addTarget(self, action: #selector(mapTypeChanged(segControl:))/* Selector(("mapTypeChanged:"))*/, for: .valueChanged)
 
     }
