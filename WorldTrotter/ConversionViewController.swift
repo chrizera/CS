@@ -19,9 +19,14 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         let date = NSDate()
         let calendar = NSCalendar.current
-        let components = calendar.component(.hour, from: date as Date)
-        let hour = 3
+        let hour = calendar.component(.hour, from: date as Date)
         
+        if hour > 18 {
+            view.backgroundColor = UIColor.black
+        }
+        else {
+            view.backgroundColor = UIColor.cyan
+        }
     }
     
     @IBOutlet var celsiusLabel: UILabel!
