@@ -63,7 +63,9 @@
                     <connections>
                         <outlet property="answerLabel" destination="5Fw-I2-LOv" id="rVw-nu-FVb"/>
                         <outlet property="currentQuestionLabel" destination="6ke-Jz-qTy" id="fs7-Yr-JTC"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="2gh-w0-bDL" id="K5c-12-TFn"/>
                         <outlet property="nextQuestionLabel" destination="VCY-Hf-VPf" id="OVr-NK-kKL"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="kKp-6S-46E" id="Oz1-se-sfE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
