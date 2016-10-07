@@ -77,8 +77,15 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         }
         */
         
-        if let text = textField.text , let value = Double(text) {
+        /*if let text = textField.text , let value = Double(text) {
             fahrenheitValue = value
+        }
+        else {
+            fahrenheitValue = nil
+        }*/
+        
+        if let text = textField.text, let number = numberFormatter.number(from: text) {
+            fahrenheitValue = number.doubleValue
         }
         else {
             fahrenheitValue = nil
