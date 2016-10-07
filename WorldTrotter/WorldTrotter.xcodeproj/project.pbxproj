@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD06F7F31DA8369C0089A8D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD06F7F51DA8369C0089A8D3 /* Localizable.strings */; };
 		BD465C651DA6FACC006CD3C7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD465C641DA6FACC006CD3C7 /* WebViewController.swift */; };
 		BD7FBBA51DA5A34100CC9EC0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7FBBA41DA5A34100CC9EC0 /* MapKit.framework */; };
 		BD7FBBA71DA5ABA100CC9EC0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7FBBA61DA5ABA100CC9EC0 /* MapViewController.swift */; };
@@ -20,6 +21,11 @@
 /* Begin PBXFileReference section */
 		BD06F7ED1DA82A880089A8D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		BD06F7F01DA82ED80089A8D3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		BD06F7F41DA8369C0089A8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BD06F7F61DA8369E0089A8D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BD06F7F71DA8369F0089A8D3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BD06F7F81DA837440089A8D3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		BD06F7F91DA837440089A8D3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		BD465C641DA6FACC006CD3C7 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BD7FBBA41DA5A34100CC9EC0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BD7FBBA61DA5ABA100CC9EC0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 				BDE497261DA45C20004D732B /* AppDelegate.swift */,
 				BDE4972A1DA45C20004D732B /* Main.storyboard */,
 				BD7FBBA61DA5ABA100CC9EC0 /* MapViewController.swift */,
+				BD06F7F51DA8369C0089A8D3 /* Localizable.strings */,
 				BD465C641DA6FACC006CD3C7 /* WebViewController.swift */,
 				BDE4972D1DA45C20004D732B /* Assets.xcassets */,
 				BDE4972F1DA45C20004D732B /* LaunchScreen.storyboard */,
@@ -128,6 +135,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				"pt-BR",
 			);
 			mainGroup = BDE4971A1DA45C20004D732B;
 			productRefGroup = BDE497241DA45C20004D732B /* Products */;
@@ -145,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDE497311DA45C20004D732B /* LaunchScreen.storyboard in Resources */,
+				BD06F7F31DA8369C0089A8D3 /* Localizable.strings in Resources */,
 				BDE4972E1DA45C20004D732B /* Assets.xcassets in Resources */,
 				BDE4972C1DA45C20004D732B /* Main.storyboard in Resources */,
 			);
@@ -167,12 +177,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		BD06F7F51DA8369C0089A8D3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD06F7F41DA8369C0089A8D3 /* Base */,
+				BD06F7F61DA8369E0089A8D3 /* en */,
+				BD06F7F71DA8369F0089A8D3 /* es */,
+				BD06F7F91DA837440089A8D3 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BDE4972A1DA45C20004D732B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BDE4972B1DA45C20004D732B /* Base */,
 				BD06F7ED1DA82A880089A8D3 /* en */,
 				BD06F7F01DA82ED80089A8D3 /* es */,
+				BD06F7F81DA837440089A8D3 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

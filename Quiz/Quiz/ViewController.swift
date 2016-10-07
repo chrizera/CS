@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         questionLabel.text = question
         answerLabel.text = "???"
         
+        animateLabelTransitions()
     }
     @IBAction func showAnswer(sender: AnyObject) {
         
@@ -43,5 +44,22 @@ class ViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.questionLabel.alpha = 0
+    }
+    
+    func animateLabelTransitions() {
+        
+        /*let animationClosure = { () -> Void in
+            self.questionLabel.alpha = 1
+            
+        }
+        UIView.animate(withDuration: 0.5, animations: animationClosure)*/
+        
+        UIView.animate(withDuration: 0.5, animations: {self.questionLabel.alpha = 1})
+
+    }
 }
 
