@@ -40,11 +40,18 @@
                                     <action selector="showAnswerWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UuF-PJ-wLC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTe-nA-Aug">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6ke-Jz-qTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2gh-w0-bDL"/>
+                            <constraint firstItem="qTe-nA-Aug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Rm-I3-cM3"/>
                             <constraint firstItem="5Fw-I2-LOv" firstAttribute="top" secondItem="YbH-dX-hht" secondAttribute="bottom" constant="244" id="8UY-iS-EuN"/>
+                            <constraint firstItem="qTe-nA-Aug" firstAttribute="top" secondItem="YbH-dX-hht" secondAttribute="top" id="F65-A3-YU2"/>
                             <constraint firstItem="ylc-dZ-q2W" firstAttribute="centerX" secondItem="YbH-dX-hht" secondAttribute="centerX" id="HNg-Cs-9cV"/>
                             <constraint firstItem="YbH-dX-hht" firstAttribute="top" secondItem="6ke-Jz-qTy" secondAttribute="bottom" constant="8" id="hZv-v9-UmG"/>
                             <constraint firstItem="ylc-dZ-q2W" firstAttribute="top" secondItem="5Fw-I2-LOv" secondAttribute="bottom" constant="8" id="jSQ-hE-gd8"/>
@@ -55,7 +62,8 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="5Fw-I2-LOv" id="rVw-nu-FVb"/>
-                        <outlet property="questionLabel" destination="6ke-Jz-qTy" id="PhT-J0-KL9"/>
+                        <outlet property="currentQuestionLabel" destination="6ke-Jz-qTy" id="fs7-Yr-JTC"/>
+                        <outlet property="nextQuestionLabel" destination="qTe-nA-Aug" id="NLX-f0-Z91"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

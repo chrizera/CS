@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var questionLabel: UILabel!
+    //@IBOutlet var questionLabel: UILabel!
+    @IBOutlet var currentQuestionLabel: UILabel!
+    @IBOutlet var nextQuestionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
     @IBAction func showNextQuestion(sender: AnyObject) {
@@ -21,7 +23,7 @@ class ViewController: UIViewController {
         }
         
         let question = questions[currentQuestionIndex]
-        questionLabel.text = question
+        nextQuestionLabel.text = question
         answerLabel.text = "???"
         
         animateLabelTransitions()
@@ -40,14 +42,14 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        questionLabel.text = questions[currentQuestionIndex]
+        currentQuestionLabel.text = questions[currentQuestionIndex]
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.questionLabel.alpha = 0
+        self.nextQuestionLabel.alpha = 0
     }
     
     func animateLabelTransitions() {
@@ -58,7 +60,8 @@ class ViewController: UIViewController {
         }
         UIView.animate(withDuration: 0.5, animations: animationClosure)*/
         
-        UIView.animate(withDuration: 0.5, animations: {self.questionLabel.alpha = 1})
+        UIView.animate(withDuration: 0.5, animations: {self.currentQuestionLabel.alpha = 0
+        self.nextQuestionLabel.alpha = 1})
 
     }
 }
