@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,12 +31,12 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="asy-tZ-i2o"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfH-0K-IGG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfH-0K-IGG">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7I-YC-6cB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7I-YC-6cB">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,7 +46,7 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQv-IU-CBj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQv-IU-CBj">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -58,12 +59,18 @@
                             <constraint firstItem="9CI-q4-FHt" firstAttribute="centerX" secondItem="FRp-n6-mN8" secondAttribute="centerX" id="BcE-sL-r07"/>
                             <constraint firstItem="C7I-YC-6cB" firstAttribute="top" secondItem="GfH-0K-IGG" secondAttribute="bottom" constant="8" id="Ghh-30-Bow"/>
                             <constraint firstItem="EQv-IU-CBj" firstAttribute="top" secondItem="9CI-q4-FHt" secondAttribute="bottom" constant="8" id="Hjf-9n-9Xm"/>
+                            <constraint firstItem="EQv-IU-CBj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cjz-qL-9Oq" secondAttribute="leadingMargin" id="IZK-YW-40h"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="C7I-YC-6cB" secondAttribute="trailing" id="JDc-CM-XoX"/>
                             <constraint firstItem="FRp-n6-mN8" firstAttribute="top" secondItem="lgO-xb-aLo" secondAttribute="bottom" constant="8" id="JTR-aA-fPM"/>
                             <constraint firstItem="C7I-YC-6cB" firstAttribute="centerX" secondItem="FRp-n6-mN8" secondAttribute="centerX" constant="-1" id="Jud-wz-LAI"/>
                             <constraint firstItem="9CI-q4-FHt" firstAttribute="top" secondItem="C7I-YC-6cB" secondAttribute="bottom" constant="8" id="OOD-Kq-6ly"/>
+                            <constraint firstItem="GfH-0K-IGG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cjz-qL-9Oq" secondAttribute="leadingMargin" id="P4V-s8-MA0"/>
                             <constraint firstItem="FRp-n6-mN8" firstAttribute="centerX" secondItem="Cjz-qL-9Oq" secondAttribute="centerX" id="Pri-FH-kCQ"/>
                             <constraint firstItem="GfH-0K-IGG" firstAttribute="centerX" secondItem="FRp-n6-mN8" secondAttribute="centerX" constant="-1" id="SO1-1K-zkO"/>
                             <constraint firstItem="GfH-0K-IGG" firstAttribute="top" secondItem="FRp-n6-mN8" secondAttribute="bottom" constant="8" id="eJF-1w-4lN"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="GfH-0K-IGG" secondAttribute="trailing" id="eKr-Ve-ggc"/>
+                            <constraint firstItem="C7I-YC-6cB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cjz-qL-9Oq" secondAttribute="leadingMargin" id="rfR-yx-4BQ"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="EQv-IU-CBj" secondAttribute="trailing" id="tAM-10-y7s"/>
                             <constraint firstItem="GfH-0K-IGG" firstAttribute="centerX" secondItem="FRp-n6-mN8" secondAttribute="centerX" constant="-1" id="yTS-oH-aWq"/>
                         </constraints>
                         <connections>
@@ -83,7 +90,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1351" y="940"/>
+            <point key="canvasLocation" x="1349.5999999999999" y="939.58020989505258"/>
         </scene>
         <!--Map-->
         <scene sceneID="Q2M-5t-EYh">
