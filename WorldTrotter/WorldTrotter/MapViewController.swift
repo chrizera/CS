@@ -45,8 +45,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         button = UIButton(frame: frame)
         button.backgroundColor = UIColor.red
         button.setTitle("Zoom", for: .normal)
+        button.addTarget(self, action: #selector(zoom(sender:)), for: UIControlEvents.touchUpInside)
         view.addSubview(button)
-
+        
+        mapView.userTrackingMode = .followWithHeading
     }
 
     func mapTypeChanged(segControl: UISegmentedControl) {
@@ -69,4 +71,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         print("MapViewController loaded its view")
     }
 
+    @IBAction func zoom(sender: AnyObject) {
+        var region = self.mapView.region
+        region.span.latitudeDelta /= 2
+        region.span.longitudeDelta /= 2
+    }
 }
