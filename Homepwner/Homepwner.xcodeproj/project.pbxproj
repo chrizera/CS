@@ -13,6 +13,7 @@
 		BD65F0CB1DAC1F0D00D268BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD65F0C91DAC1F0D00D268BB /* LaunchScreen.storyboard */; };
 		BD65F0D31DAC205300D268BB /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F0D21DAC205300D268BB /* ItemsViewController.swift */; };
 		BD65F0D51DAC22CC00D268BB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F0D41DAC22CC00D268BB /* Item.swift */; };
+		BD65F0D71DAC359500D268BB /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F0D61DAC359500D268BB /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BD65F0CC1DAC1F0D00D268BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD65F0D21DAC205300D268BB /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = ../ItemsViewController.swift; sourceTree = "<group>"; };
 		BD65F0D41DAC22CC00D268BB /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
+		BD65F0D61DAC359500D268BB /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemStore.swift; path = ../ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		BD65F0BF1DAC1F0D00D268BB /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				BD65F0D61DAC359500D268BB /* ItemStore.swift */,
 				BD65F0D41DAC22CC00D268BB /* Item.swift */,
 				BD65F0D21DAC205300D268BB /* ItemsViewController.swift */,
 				BD65F0C01DAC1F0D00D268BB /* AppDelegate.swift */,
@@ -142,6 +145,7 @@
 			files = (
 				BD65F0D31DAC205300D268BB /* ItemsViewController.swift in Sources */,
 				BD65F0D51DAC22CC00D268BB /* Item.swift in Sources */,
+				BD65F0D71DAC359500D268BB /* ItemStore.swift in Sources */,
 				BD65F0C11DAC1F0D00D268BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
