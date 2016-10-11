@@ -14,52 +14,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="r8E-oZ-q0b">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WME-px-I25">
-                                    <frame key="frameInset" minX="16" minY="7" width="30" height="30"/>
-                                    <state key="normal" title="Edit"/>
-                                    <connections>
-                                        <action selector="toggleEditingModeWithSender:" destination="qPt-C6-zEy" eventType="touchUpInside" id="mNk-NP-pBf"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWn-kg-ySW">
-                                    <frame key="frameInset" minX="337" minY="7" width="30" height="30"/>
-                                    <state key="normal" title="Add"/>
-                                    <connections>
-                                        <action selector="addNewItemWithSender:" destination="qPt-C6-zEy" eventType="touchUpInside" id="dPZ-aw-1eY"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="NWn-kg-ySW" firstAttribute="leading" secondItem="WME-px-I25" secondAttribute="trailing" constant="8" id="FyJ-d5-fFa"/>
-                                <constraint firstItem="WME-px-I25" firstAttribute="centerY" secondItem="r8E-oZ-q0b" secondAttribute="centerY" id="Rvw-Io-Zes"/>
-                                <constraint firstItem="NWn-kg-ySW" firstAttribute="centerY" secondItem="r8E-oZ-q0b" secondAttribute="centerY" id="ZhO-Ar-5pa"/>
-                                <constraint firstItem="NWn-kg-ySW" firstAttribute="width" secondItem="WME-px-I25" secondAttribute="width" id="gOs-Oh-fU2"/>
-                                <constraint firstAttribute="trailing" secondItem="NWn-kg-ySW" secondAttribute="trailing" constant="8" id="huj-cP-Rso"/>
-                                <constraint firstItem="WME-px-I25" firstAttribute="leading" secondItem="r8E-oZ-q0b" secondAttribute="leading" constant="8" id="i9T-2x-cgj"/>
-                            </constraints>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="U6f-kV-StB" detailTextLabel="IzO-co-pUJ" style="IBUITableViewCellStyleValue1" id="dXe-tX-LvD">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dXe-tX-LvD" id="WPg-Hd-bpE">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U6f-kV-StB">
-                                            <frame key="frameInset" minX="15" minY="12" width="33.5" height="20.5"/>
+                                            <frame key="frameInset" minX="15" minY="11" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IzO-co-pUJ">
-                                            <frame key="frameInset" minX="316" minY="12" width="44" height="20.5"/>
+                                            <frame key="frameInset" minX="316" minY="11" width="44" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>

@@ -21,15 +21,9 @@ class ItemStore {
         return newItem
     }
     
-    /*init() {
+    init() {
         for _ in 0 ..< 5 {
             createItem()
-        }
-    }*/
-    
-    func removeItem(item: Item) {
-        if let index = allItems.index(of: item) {
-            allItems.remove(at: index)
         }
     }
 }
