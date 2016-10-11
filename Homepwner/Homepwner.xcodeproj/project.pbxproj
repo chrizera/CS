@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD04F1D21DAD90F70083DB8B /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD04F1D11DAD90F70083DB8B /* ItemCell.swift */; };
 		BD65F0C11DAC1F0D00D268BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F0C01DAC1F0D00D268BB /* AppDelegate.swift */; };
 		BD65F0C61DAC1F0D00D268BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD65F0C41DAC1F0D00D268BB /* Main.storyboard */; };
 		BD65F0C81DAC1F0D00D268BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD65F0C71DAC1F0D00D268BB /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD04F1D11DAD90F70083DB8B /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		BD65F0BD1DAC1F0D00D268BB /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD65F0C01DAC1F0D00D268BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD65F0C51DAC1F0D00D268BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				BD65F0D61DAC359500D268BB /* ItemStore.swift */,
 				BD65F0D41DAC22CC00D268BB /* Item.swift */,
 				BD65F0D21DAC205300D268BB /* ItemsViewController.swift */,
+				BD04F1D11DAD90F70083DB8B /* ItemCell.swift */,
 				BD65F0C01DAC1F0D00D268BB /* AppDelegate.swift */,
 				BD65F0C41DAC1F0D00D268BB /* Main.storyboard */,
 				BD65F0C71DAC1F0D00D268BB /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				BD65F0D51DAC22CC00D268BB /* Item.swift in Sources */,
 				BD65F0D71DAC359500D268BB /* ItemStore.swift in Sources */,
 				BD65F0C11DAC1F0D00D268BB /* AppDelegate.swift in Sources */,
+				BD04F1D21DAD90F70083DB8B /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 				BD65F0D11DAC1F0D00D268BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
