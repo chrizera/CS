@@ -15,6 +15,7 @@
 		BD65F0D31DAC205300D268BB /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F0D21DAC205300D268BB /* ItemsViewController.swift */; };
 		BD65F0D51DAC22CC00D268BB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F0D41DAC22CC00D268BB /* Item.swift */; };
 		BD65F0D71DAC359500D268BB /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65F0D61DAC359500D268BB /* ItemStore.swift */; };
+		BD6E75FC1DB008FA0029534D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E75FB1DB008FA0029534D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BD65F0D21DAC205300D268BB /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = ../ItemsViewController.swift; sourceTree = "<group>"; };
 		BD65F0D41DAC22CC00D268BB /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 		BD65F0D61DAC359500D268BB /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemStore.swift; path = ../ItemStore.swift; sourceTree = "<group>"; };
+		BD6E75FB1DB008FA0029534D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				BD04F1D11DAD90F70083DB8B /* ItemCell.swift */,
 				BD65F0C01DAC1F0D00D268BB /* AppDelegate.swift */,
 				BD65F0C41DAC1F0D00D268BB /* Main.storyboard */,
+				BD6E75FB1DB008FA0029534D /* DetailViewController.swift */,
 				BD65F0C71DAC1F0D00D268BB /* Assets.xcassets */,
 				BD65F0C91DAC1F0D00D268BB /* LaunchScreen.storyboard */,
 				BD65F0CC1DAC1F0D00D268BB /* Info.plist */,
@@ -149,6 +152,7 @@
 				BD65F0D31DAC205300D268BB /* ItemsViewController.swift in Sources */,
 				BD65F0D51DAC22CC00D268BB /* Item.swift in Sources */,
 				BD65F0D71DAC359500D268BB /* ItemStore.swift in Sources */,
+				BD6E75FC1DB008FA0029534D /* DetailViewController.swift in Sources */,
 				BD65F0C11DAC1F0D00D268BB /* AppDelegate.swift in Sources */,
 				BD04F1D21DAD90F70083DB8B /* ItemCell.swift in Sources */,
 			);
