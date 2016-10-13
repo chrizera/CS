@@ -122,6 +122,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="6oy-VY-xfP" id="5CR-pc-G2y"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -136,6 +139,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="6oy-VY-xfP" id="7qL-6d-w5l"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -150,6 +156,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="6oy-VY-xfP" id="vGl-4J-gSu"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -166,12 +175,16 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="601-f7-jbN" firstAttribute="top" secondItem="Orl-hX-seq" secondAttribute="bottom" constant="8" id="AWu-Uv-Qov"/>
                             <constraint firstAttribute="leadingMargin" secondItem="601-f7-jbN" secondAttribute="leading" id="e3i-o3-GEa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="601-f7-jbN" secondAttribute="trailing" id="xob-QE-rWb"/>
                             <constraint firstItem="vvU-op-OsB" firstAttribute="top" secondItem="601-f7-jbN" secondAttribute="bottom" constant="8" id="zqo-Oo-2Yi"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XdH-2y-95z" appends="YES" id="VzA-HC-83C"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="P4e-Ix-p9t" id="OKY-de-o8V"/>
@@ -181,6 +194,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEr-qp-5gz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="XdH-2y-95z">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="6oy-VY-xfP" id="iDK-0F-13O"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2088.8000000000002" y="-26.53673163418291"/>
         </scene>
